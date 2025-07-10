@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhil Sai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>M. Akhil Sai</h1>
+      <p>Final Year CSE | Python, Flask & BI Enthusiast</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Computer Science Engineering student at Ballari Institute of Technology and Management with a passion for Python development, data visualization, and creating impactful digital solutions.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Java</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Power BI</span>
+        <span>Flask</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Edu Bot</h3>
+        <p>Interactive Python learning platform with AI chatbot, compiler, face recognition, and progress tracking.</p>
+        <p><strong>Tech:</strong> Flask, HTML, CSS, JavaScript, Botpress</p>
+      </div>
+      <div class="card">
+        <h3>Student Analytics Dashboard</h3>
+        <p>Power BI dashboard providing insights into student demographics and academic data.</p>
+        <a href="https://app.powerbi.com/links/sUyIDMD6iw?ctid=d95f6094-d28c-42bc-9096-e0746ed850b7&pbi_source=linkShare" target="_blank" class="link-btn">View Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>Weather Forecast Dashboard</h3>
+        <p>Real-time weather updates using OpenWeatherMap API with a responsive UI deployed on Vercel + Render.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><a href="https://drive.google.com/file/d/1GMMQQh9bexvN5YEIsyknULUFq8IVmSxM/view?usp=drivesdk" target="_blank">Python Programming - EZ Trainings</a></li>
+        <li><a href="https://drive.google.com/file/d/1LkeN9pXfZtV62DVRffyYST18fqNoFbUe/view?usp=drivesdk" target="_blank">Database & SQL - Infosys Springboard</a></li>
+        <li><a href="https://drive.google.com/file/d/1GH7SlqC_1CDNDWiEaroysStO4BglsBVc/view?usp=drivesdk" target="_blank">Power BI Workshop - TechTip24</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section" style="max-width: 600px; margin: auto;">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="mailto:akisai223@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="email-display">
+        <p>Or email me directly at: <span id="copyEmail">akisai223@gmail.com</span> <button onclick="copyEmail()" class="copy-btn">Copy</button></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Connect with me:</p>
+      <a href="https://www.linkedin.com/in/akhil-sai-715532289" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/AKHIL377" target="_blank">GitHub</a> |
+      <a href="#contact">Contact Me</a>
+    </div>
+  </footer>
+
+  <script>
+    function copyEmail() {
+      const email = document.getElementById('copyEmail').innerText;
+      navigator.clipboard.writeText(email).then(() => {
+        alert('Email copied to clipboard!');
+      });
+    }
+  </script>
+</body>
+</html>
