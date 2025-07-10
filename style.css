@@ -179,3 +179,57 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+#overview h2 {
+  font-size: 2rem; /* You can adjust size as needed */
+  color: #a64bf4;   /* Optional: Make it visually stand out */
+  margin-bottom: 15px;
+}
+#overview h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.icon-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+.icon-strip {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.icon-strip iconify-icon {
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+  filter: drop-shadow(0 0 2px #fdfcfd);
+}
+
+.icon-strip iconify-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #fdfdfd;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.project-image {
+  width: 30%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
