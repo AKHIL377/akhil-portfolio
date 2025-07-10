@@ -11,23 +11,25 @@
 <body>
   <div id="background-animation"></div>
 
-  <header class="hero">
-    <div class="container hero-flex">
-      <div class="hero-text">
-        <h1>I'm <span class="highlight">M. Akhil Sai</span></h1>
-        <p>Passionate Python Developer & BI Enthusiast</p>
-      </div>
-      <div class="hero-photo">
-        <img src="akhil.jpg" alt="M. Akhil Sai">
-      </div>
+<header class="hero">
+  <div class="container hero-flex">
+    <div class="hero-text">
+      <h1>I'm <span class="highlight">M. Akhil Sai</span></h1>
+      <p>Passionate Python Developer & BI Enthusiast</p>
     </div>
-  </header>
+    <div class="hero-photo">
+      <img src="AKHIL SAI.jpg" alt="Akhil Sai">
+    </div>
+  </div>
+</header>
+
 
   <nav class="navbar">
     <div class="container">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -42,14 +44,31 @@
   <section id="skills" class="section">
     <div class="container">
       <h2>Skills</h2>
-      <div class="grid">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Java</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Power BI</span>
-        <span>Flask</span>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <iconify-icon icon="logos:python" width="50"></iconify-icon>
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <iconify-icon icon="devicon:mysql-wordmark" width="50"></iconify-icon>
+          <p>SQL</p>
+        </div>
+        <div class="skill-card">
+          <iconify-icon icon="simple-icons:powerbi" width="50" style="color: #f2c811;"></iconify-icon>
+          <p>Power BI</p>
+        </div>
+        <div class="skill-card">
+          <iconify-icon icon="vscode-icons:file-type-html" width="50"></iconify-icon>
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <iconify-icon icon="vscode-icons:file-type-css" width="50"></iconify-icon>
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <iconify-icon icon="logos:flask" width="50"></iconify-icon>
+          <p>Flask</p>
+        </div>
       </div>
     </div>
   </section>
@@ -59,18 +78,23 @@
       <h2>Projects</h2>
       <div class="card">
         <h3>Edu Bot</h3>
-        <p>Interactive Python learning platform with AI chatbot, compiler, face recognition, and progress tracking.</p>
-        <p><strong>Tech:</strong> Flask, HTML, CSS, JavaScript, Botpress</p>
+        <p>Python learning platform with compiler, chatbot, and progress tracker.</p>
       </div>
       <div class="card">
         <h3>Student Analytics Dashboard</h3>
-        <p>Power BI dashboard providing insights into student demographics and academic data.</p>
-        <a href="https://app.powerbi.com/links/sUyIDMD6iw?ctid=d95f6094-d28c-42bc-9096-e0746ed850b7&pbi_source=linkShare" target="_blank" class="link-btn">View Dashboard</a>
+        <a href="https://app.powerbi.com/links/sUyIDMD6iw..." class="link-btn" target="_blank">View Dashboard</a>
       </div>
-      <div class="card">
-        <h3>Weather Forecast Dashboard</h3>
-        <p>Real-time weather updates using OpenWeatherMap API with a responsive UI deployed on Vercel + Render.</p>
-      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><a href="#">Python - EZ Trainings</a></li>
+        <li><a href="#">SQL - Infosys Springboard</a></li>
+        <li><a href="#">Power BI - TechTip24</a></li>
+      </ul>
     </div>
   </section>
 
@@ -89,6 +113,9 @@
 
         <button type="submit">Send Message</button>
       </form>
+      <div class="email-display">
+        <p>Or email me directly at: <span id="copyEmail">akisai223@gmail.com</span> <button onclick="copyEmail()" class="copy-btn">Copy</button></p>
+      </div>
     </div>
   </section>
 
@@ -100,6 +127,23 @@
       <a href="#contact">Contact Me</a>
     </div>
   </footer>
+
+  <!-- Vanta Background Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#background-animation",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x9141ff,
+      backgroundColor: 0x0f0f23
+    });
+  </script>
 
   <script>
     function copyEmail() {
