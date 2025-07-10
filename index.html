@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="background-animation"></div>
+
   <header class="hero">
     <div class="container">
-      <h1>M. Akhil Sai</h1>
-      <p>Final Year CSE | Python, Flask & BI Enthusiast</p>
+      <h1>Hi, I'm <span class="highlight">Akhil</span></h1>
+      <p>Passionate Python Developer & BI Enthusiast</p>
     </div>
   </header>
 
@@ -52,17 +54,11 @@
       <h2>Projects</h2>
       <div class="card">
         <h3>Edu Bot</h3>
-        <p>Interactive Python learning platform with AI chatbot, compiler, face recognition, and progress tracking.</p>
-        <p><strong>Tech:</strong> Flask, HTML, CSS, JavaScript, Botpress</p>
+        <p>Python learning platform with compiler, chatbot, and progress tracker.</p>
       </div>
       <div class="card">
         <h3>Student Analytics Dashboard</h3>
-        <p>Power BI dashboard providing insights into student demographics and academic data.</p>
-        <a href="https://app.powerbi.com/links/sUyIDMD6iw?ctid=d95f6094-d28c-42bc-9096-e0746ed850b7&pbi_source=linkShare" target="_blank" class="link-btn">View Dashboard</a>
-      </div>
-      <div class="card">
-        <h3>Weather Forecast Dashboard</h3>
-        <p>Real-time weather updates using OpenWeatherMap API with a responsive UI deployed on Vercel + Render.</p>
+        <a href="https://app.powerbi.com/links/sUyIDMD6iw..." class="link-btn" target="_blank">View Dashboard</a>
       </div>
     </div>
   </section>
@@ -71,9 +67,9 @@
     <div class="container">
       <h2>Certifications</h2>
       <ul class="cert-list">
-        <li><a href="https://drive.google.com/file/d/1GMMQQh9bexvN5YEIsyknULUFq8IVmSxM/view?usp=drivesdk" target="_blank">Python Programming - EZ Trainings</a></li>
-        <li><a href="https://drive.google.com/file/d/1LkeN9pXfZtV62DVRffyYST18fqNoFbUe/view?usp=drivesdk" target="_blank">Database & SQL - Infosys Springboard</a></li>
-        <li><a href="https://drive.google.com/file/d/1GH7SlqC_1CDNDWiEaroysStO4BglsBVc/view?usp=drivesdk" target="_blank">Power BI Workshop - TechTip24</a></li>
+        <li><a href="#">Python - EZ Trainings</a></li>
+        <li><a href="#">SQL - Infosys Springboard</a></li>
+        <li><a href="#">Power BI - TechTip24</a></li>
       </ul>
     </div>
   </section>
@@ -107,6 +103,23 @@
       <a href="#contact">Contact Me</a>
     </div>
   </footer>
+
+  <!-- Vanta.js Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#background-animation",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x9141ff,
+      backgroundColor: 0x0f0f23
+    });
+  </script>
 
   <script>
     function copyEmail() {

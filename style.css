@@ -1,23 +1,46 @@
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f3f3f3;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #0f0f23;
+  position: relative;
+  overflow-x: hidden;
 }
 
-header.hero {
-  background: linear-gradient(to right, #6a0dad, #b666f1);
-  color: white;
-  padding: 80px 20px;
+#background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
   text-align: center;
+  padding: 100px 20px 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.highlight {
+  color: #a64bf4;
 }
 
 .navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 10px 0;
   text-align: center;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -25,31 +48,22 @@ header.hero {
 
 .navbar a {
   margin: 0 15px;
-  color: #6a0dad;
+  color: #ccc;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #a64bf4;
+  color: #ffffff;
 }
 
 .section {
   padding: 60px 20px;
-  background-color: #fff;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  color: #6a0dad;
-  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(15, 15, 35, 0.6);
+  border-radius: 12px;
+  margin: 30px auto;
 }
 
 .grid {
@@ -59,110 +73,63 @@ h2 {
 }
 
 .grid span {
-  background: #e5dbff;
+  background: #a64bf4;
   padding: 10px 20px;
   border-radius: 30px;
+  color: white;
   font-weight: 500;
-  transition: background 0.3s;
-}
-
-.grid span:hover {
-  background: #d0bfff;
+  transition: 0.3s;
 }
 
 .card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
-  margin-bottom: 20px;
-  border-left: 5px solid #6a0dad;
+  margin: 15px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #a64bf4;
 }
 
 .link-btn {
   display: inline-block;
   margin-top: 10px;
-  background-color: #6a0dad;
+  background-color: #a64bf4;
   color: white;
   padding: 10px 15px;
-  text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.link-btn:hover {
-  background-color: #8b36e2;
-}
-
-.cert-list {
-  list-style: none;
-  padding: 0;
-}
-
-.cert-list li {
-  margin-bottom: 10px;
-}
-
-.cert-list a {
-  color: #6a0dad;
   text-decoration: none;
-  transition: color 0.3s;
-}
-
-.cert-list a:hover {
-  color: #a64bf4;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  background-color: #6a0dad;
+  margin-bottom: 10px;
+  background: #1a1a40;
   color: white;
-  padding: 10px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
+  border: 1px solid #444;
   border-radius: 5px;
-  transition: background 0.3s;
 }
 
-.contact-form button:hover {
-  background-color: #8b36e2;
-}
-
-.email-display {
-  margin-top: 10px;
-  font-size: 15px;
+.contact-form button,
+.copy-btn {
+  background-color: #9141ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .copy-btn {
-  background-color: #6a0dad;
-  color: white;
-  border: none;
-  padding: 5px 10px;
   margin-left: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 footer {
-  background: #222;
-  color: white;
   text-align: center;
-  padding: 30px 10px;
+  padding: 20px;
+  background-color: #0f0f23;
+  color: #aaa;
 }
 
 footer a {
