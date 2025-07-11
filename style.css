@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
@@ -57,12 +57,28 @@ body {
 
 /* Navbar */
 .navbar {
-  text-align: center;
-  padding: 10px 0;
-  background: rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  background-color: rgba(15, 15, 35, 0.95);
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-links a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar a {
@@ -73,7 +89,7 @@ body {
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   color: #ffffff;
 }
 
@@ -124,9 +140,29 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
+  border-radius: 10px;
   border-left: 4px solid #a64bf4;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(166, 75, 244, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;  /* controls gap between title and content */
+  color: #ffffff;
+}
+
+.card p {
+  text-align: justify;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #ddd;
 }
 
 .link-btn {
@@ -179,20 +215,24 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
 #overview h2 {
   font-size: 2rem; /* You can adjust size as needed */
   color: #a64bf4;   /* Optional: Make it visually stand out */
   margin-bottom: 15px;
 }
+
 #overview h1 {
   font-size: 2.5rem;
   color: #ffffff;
   margin-bottom: 10px;
 }
+
 .icon-wrapper {
   text-align: center;
   margin: 20px 0;
 }
+
 .icon-strip {
   display: flex;
   justify-content: center;
@@ -229,7 +269,58 @@ footer a {
   }
 }
 .project-image {
-  width: 30%;
+  width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #a64bf4;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(166, 75, 244, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+/* 🔥 Hover Float Effect */
+.card:hover {
+  transform: translateY(-10px); /* Moves it upward */
+  box-shadow: 0 8px 20px rgba(166, 75, 244, 0.4); /* Glow shadow */
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.section p {
+  text-align: justify;
+}
+.card p:first-of-type {
+  margin-top: 0;  /* remove space above 'Overview' */
 }

@@ -7,11 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
 </head>
 <body>
-  <div id="background-animation"></div>
 
+  <div id="background-animation"></div>
 <header class="hero">
   <div class="container hero-flex">
     <div class="hero-text">
@@ -29,10 +28,10 @@
 
   <nav class="navbar">
     <div class="container">
-      <a href="#overview"><strong>OverView</a>
-      <a href="#skills"><strong>Skills</a>
-      <a href="#projects"><strong>Projects</a>
-      <a href="#contact"><strong>Contact</a>
+      <a href="#overview"><strong>OverView</strong></a>
+      <a href="#skills"><strong>Skills</strong></a>
+      <a href="#projects"><strong>Projects</strong></a>
+      <a href="#contact"><strong>Contact</strong></a>
     </div>
   </nav>
 
@@ -93,46 +92,51 @@
   </section>
 
   <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
+  <div class="container">
+    <h4>My Work</h4>
+    <h2>Projects</h2>
+    <div class="projects-grid">
       <div class="card">
-        <img src="Edu Bot.jpg" alt="Edu Bot Project Screenshot" class="project-image">
-        <img src="Edu Bot 1.jpg" alt="Edu Bot Project Screenshot" class="project-image">
+        <img src="Edu Bot 1.jpg" alt="Edu Bot Project Screenshot" class="project-image" style="width: 80%; border-radius: 8px; display: block; margin: 0 auto 10px;" />
         <h3>Edu Bot</h3>
-        <p>Overview : Edu Bot is a full-fledged Python learning platform designed for students and beginners. It integrates a live compiler, AI chatbot, face recognition for authentication, and personalized progress tracking.</p>
-        <p>Problem Solved : Many students struggle to find structured, interactive platforms to learn Python with hands-on practice and guidance. Edu Bot bridges this gap by offering a complete learning environment in one place.</p>
+        <p><Strong>Overview :</Strong> Edu Bot is an AI-powered platform for beginners to learn Python programming. It includes a compiler, chatbot for queries, and personalized progress tracking.</p>
         <p><strong>Tech Stack : </strong> Flask, HTML, CSS, JavaScript, Botpress</p>
       </div>
+
       <div class="card">
-        <img src="Dashboard.jpg" alt="Dashboard Project Screenshot" class="project-image">
+        <img src="Dashboard.jpg" alt="Dashboard Project Screenshot" class="project-image" style="width: 80%; border-radius: 8px; display: block; margin: 0 auto 10px;" />
         <h3>Student Analytics Dashboard</h3>
-        <p>Overview : An interactive dashboard built using Power BI that presents deep insights into the demographics and academic performance of engineering students from the 2021–2025 batch.</p>
-        <p>Problem Solved : Educational institutions need visual, real-time insights into student performance and distribution to make data-informed decisions. Traditional spreadsheets and reports are not sufficient.</p>
+        <p><strong>Overview : </strong> interactive dashboard to analyze student performance and demographics using real-time insights.A sleek UI weather dashboard that fetches live weather using OpenWeatherMap API.</p>
         <p><strong>Tools Used : </strong>Microsoft Power BI, Excel, DAX, Power Query</p>
       </div>
+
       <div class="card">
-        <img src="Weather.jpg" alt="Weather Project Screenshot" class="project-image">
+        <img src="Weather.jpg" alt="Weather Project Screenshot" class="project-image" style="width: 80%; border-radius: 8px; display: block; margin: 0 auto 10px;" />
         <h3>Weather Forecast Dashboard</h3>
-        <p>Overview : A sleek and responsive weather dashboard that fetches live weather data using OpenWeatherMap API and presents it to users in a friendly UI.</p>
-        <p>Problem Solved : Traditional weather apps are often slow or cluttered. This dashboard offers a clean and fast alternative, useful for students, travelers, or daily users.</p>
-        <p><strong>Tech Stack : </strong> Flask, HTML, CSS, JavaScript, OpenWeatherMap API, Vercel, Render</p>
+        <p><strong>Overview : </strong> A sleek UI weather dashboard that fetches live weather using OpenWeatherMap API.</p>
+        <p><strong>Tech Stack : </strong> Flask, HTML, CSS, JavaScript, OpenWeatherMap API</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
   <section id="contact" class="section" style="max-width: 600px; margin: auto;">
     <div class="container">
-      <h2>Contact</h2>
+      <h2> Get in Touch </h2>
+      
       <form action="mailto:akisai223@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+         <input type="text" id="name" name="name" required placeholder="Enter your name">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="Enter your mail ID">
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+         <textarea id="message" name="message" rows="5" required placeholder="Enter your query here"></textarea>
 
         <button type="submit">Send Message</button>
       </form>
