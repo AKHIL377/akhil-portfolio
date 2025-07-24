@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap:20px;
 }
 
 .hero-text {
